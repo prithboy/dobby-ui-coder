@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dobby UI Coder — Sentient</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <main id="splash" class="page centered">
+    <div class="logo-wrap">
+      <img src="./sentient.png" alt="Sentient Logo" class="sentient-logo">
+    </div>
+    <h1 class="big">Making Open Source AI WIN</h1>
+    <p class="small-muted">Powered By Sentient</p>
+    <button id="enterBtn" class="btn-primary">Continue to Dobby UI Coder</button>
+  </main>
+
+  <!-- Main App -->
+  <section id="app" class="page hidden centered">
+    <header class="app-header centered">
+      <img src="./dobby.png" alt="Dobby Logo" class="dobby-logo">
+      <div class="title-block">
+        <h2>Dobby UI Coder</h2>
+        <p class="sub">powered by Dobby 8B model</p>
+      </div>
+    </header>
+
+    <main class="app-body centered">
+      <div class="card input-card">
+        <label for="designDesc"><strong>Describe your UI</strong></label>
+        <textarea id="designDesc" rows="8" placeholder="Describe your design here..."></textarea>
+        <div class="controls">
+          <button id="generateBtn" class="btn-primary">Done — Generate Code</button>
+        </div>
+      </div>
+
+      <div class="card output-card">
+        <div class="card-header">index.html</div>
+        <pre id="codeOut" class="code-block">// Your generated HTML code will appear here</pre>
+        <div class="card-actions">
+          <button id="copyBtn" class="btn-secondary">Copy</button>
+          <a id="downloadBtn" class="btn-link" download="index.html">Download</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer centered">
+      <img src="./x.png" alt="X Logo" class="x-logo">
+      <span class="credits">made by @prith_boy</span>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
