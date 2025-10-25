@@ -1,14 +1,3 @@
-# dependencies
 node_modules
-
-# environment variables
 .env
-
-# build files
 .vercel
-dist
-build
-
-# system files
-.DS_Store
-Thumbs.db
