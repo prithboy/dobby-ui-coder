@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
-const FIREWORKS_KEY = process.env.FIREWORKS_API_KEY;
+const FIREWORKS_KEY = process.env.FIREWORKS_API_KEY; console.log("🔑 Fireworks key loaded:", FIREWORKS_KEY ? "Yes" : "No");
 
 // ✅ Root route (index.html)
 app.get("/", (_, res) => {

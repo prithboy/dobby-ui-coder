@@ -22,11 +22,11 @@ generateBtn.addEventListener('click', async () => {
   generateBtn.textContent = 'Generating...';
 
   try {
-    const res = await fetch('/generate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt })
-    });
+    const res = await fetch('/api/generate', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ prompt })
+});
     if (!res.ok) throw new Error('Server error');
     const data = await res.json();
     codeOut.textContent = data.code || '// No code returned';
